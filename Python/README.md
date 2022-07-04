@@ -39,6 +39,7 @@ When a beginner first encounters recursion it can be hard to understand, so I'll
 def find_factorial_with_recursion(x, total=1):
     return total if x == 0 else find_factorial_with_recursion(x-1, total*x)
 ```
+*NOTE: Python has a recursion depth limit. This means Python will not recurse a function past a limit (995 recursions). This means using the recursion method Python cannot find the factorial of numbers of 996 or more.*
 
 ## Advanced
 In the `Python` folder there is a `solution_advanced.py`. 
@@ -53,6 +54,15 @@ This is because the C programming language is faster and more efficient than Pyt
 
 ## Benchmarking
 In the `Python` folder there are three Python files: `solution.py`, `solution_benchmark.py`, and `solution_advanced.py`. 
-The benchmark version of the solution will show how long (in nanoseconds) it takes for the factorial to be found. This allows you to see how fast each different version of finding the factorial is the fastest. Below is the timings I recorded on my computers.
+The benchmark version of the solution will show how long (in nanoseconds) it takes for the factorial to be found. This allows you to see how fast each different version of finding the factorial is the fastest. Below is the timings I recorded on my computers. <br>
+
+| Position | Score (nanoseconds) | Version        | n (integer provided) | file                 |
+|:--------:|---------------------|----------------|----------------------|----------------------|
+|    1     | 184317              | math.factorial | 800                  | solution_advanced.py |
+|    2     | 887906              | while loop     | 800                  | solution.py          |
+|    3     | 1496771             | for loop       | 800                  | solution_advanced.py |
+|    4     | 2996144             | recursion      | 800                  | solution_advanced.py |
+|    5     | 4874392             | recursion      | 800                  | solution.py          |
+
 <br>
 *NOTE: `soltuion_benchmark.py` contains only the benchmark code for `solution.py`, `solution_advanced.py` will benchmark itself on its own.*
