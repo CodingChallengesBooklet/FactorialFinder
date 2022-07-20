@@ -1,6 +1,15 @@
 # Factorial Finder
 In this code challenge we write a program that finds the factorial of a positive integer.
 
+![GitHub followers](https://img.shields.io/github/followers/hrszpuk?style=social)
+![Twitter Follow](https://img.shields.io/twitter/follow/hrszpuk?style=social)
+<br>
+![GitHub language count](https://img.shields.io/github/languages/count/CodingChallengesBooklet/FactorialFinder?style=for-the-badge)
+![GitHub code size in bytes](https://img.shields.io/github/languages/code-size/CodingChallengesBooklet/FactorialFinder?style=for-the-badge)
+![GitHub issues](https://img.shields.io/github/issues/CodingChallengesBooklet/FactorialFinder?style=for-the-badge)
+![GitHub last commit](https://img.shields.io/github/last-commit/CodingChallengesBooklet/FactorialFinder?style=for-the-badge)
+![GitHub branch checks state](https://img.shields.io/github/checks-status/CodingChallengesBooklet/FactorialFinder/main?style=for-the-badge)
+
 ## Problem
 The Factorial of a positive integer, n, is defined as the product of the sequence n, n-1, n-2, ...1 and the factorial of zeo, 0, is defined as being 1. Solve this using both loops and recursion.
 
